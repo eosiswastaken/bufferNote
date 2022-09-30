@@ -1,0 +1,83 @@
+data:text/html;charset=utf-8,<title>textEdit_</title>,
+<link rel="icon" type="image/x-icon"
+    href="https://raw.githubusercontent.com/EosisWasTaken/eosis.codes/2bdeaccc061e90f88bd8c05715f61f63c321dffc/1f4dd.ico">
+<style>
+    body {
+        background: %23252525;
+        color: %23333;
+        margin: 0;
+        width: 100%
+    }
+
+    textarea {
+        background: %23191919;
+        border: 0;
+        color: %23dfa00b;
+        font-family: "Space Mono" sans-serif;
+        font-size: 1.8rem;
+        height: 98%;
+        line-height: 1.2;
+        margin: 0 auto;
+        outline: 0;
+        padding: 4rem;
+        width: 100%
+    }
+
+    button {
+        background-color: %23212121;
+        border: 1px black solid;
+        color: %23999;
+        cursor: pointer;
+        float: right;
+        margin: 10px;
+        margin-right: 20px;
+        padding: 6px 10px;
+        border-radius: 7px 7px 7px 7px;
+    }
+
+    @media (max-width:100%) {
+        body {
+            width: 100%;
+            padding: 0
+        }
+
+        textarea {
+            padding: 10px
+        }
+
+        button {
+            float: none
+        }
+    }
+
+    ::selection {
+        background: rgba(31, 81, 255, 0.8);
+        /* WebKit/Blink Browsers */
+    }
+
+    ::-moz-selection {
+        background: rgba(31, 81, 255, 0.8);
+        /* Gecko Browsers */
+    }
+
+    %23title {
+        color: %23191919;
+        padding: 3.45rem;
+    }
+
+    %23caret {
+        color: %231F51FF;
+    }
+
+    span {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-top: 30px;
+        font-size: 35px;
+    }
+</style>
+
+<body>
+    <b><span id="title">bufferNote<span id="caret">_</span></span></b>
+    <button onclick="select()">Select note</button><textarea contenteditable="true" id="TE" spellcheck="false"
+        placeholder="Write..." autofocus></textarea>
+    <script>function select() { var textarea = document.getElementById("TE"); textarea.select(); textarea.setSelectionRange(0, 99999); };</script>
