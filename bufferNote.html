@@ -1,18 +1,18 @@
-data:text/html;charset=utf-8,<html class="light">
+data:text/html;charset=utf-8,
+<html class="light">
 <title>_bufferNote</title>
 <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/EosisWasTaken/bufferNote/main/1f4dd.ico">
 <style>
     body {
-        margin: 0Pauto;
         width: 99%
     }
 
     textarea {
         border: 0;
         font-family: "Space Mono" sans-serif;
-        font-size: 2rem;
+        font-size: 1.5rem;
         height: 90%;
-        line-height: 1.4;
+        line-height: 1.2;
         margin: 0 auto;
         outline: 0;
         padding: 4rem;
@@ -37,41 +37,15 @@ data:text/html;charset=utf-8,<html class="light">
         right: 0;
     }
 
-    @media (max-width:100%) {
-        body {
-            width: 100%;
-            padding: 0
-        }
-
-        textarea {
-            padding: 10px
-        }
-
-        button {
-            float: none
-        }
-    }
-
     header {
         margin-top: 15px;
         padding-bottom: 5px;
     }
 
-
     header span {
         margin-left: 2px;
         font-family: "Space Mono", sans-serif;
         font-size: 20px;
-    }
-
-    ::selection {
-        background: %23dfa00b;
-        /* WebKit/Blink Browsers */
-    }
-
-    ::-moz-selection {
-        background: %23dfa00b;
-        /* Gecko Browsers */
     }
 
     hr {
@@ -100,8 +74,6 @@ data:text/html;charset=utf-8,<html class="light">
         transition: color 0.5s;
     }
 
-
-
     .dark body {
         background-color: %23191919;
         transition: background-color 0.5s;
@@ -123,6 +95,29 @@ data:text/html;charset=utf-8,<html class="light">
         color: %23dfa00b;
         transition: color 0.5s;
     }
+
+    ::selection {
+        background: %23dfa00b;
+    }
+
+    ::-moz-selection {
+        background: %23dfa00b;
+    }
+
+    @media (max-width:100%) {
+        body {
+            width: 100%;
+            padding: 0
+        }
+
+        textarea {
+            padding: 10px
+        }
+
+        button {
+            float: none
+        }
+    }
 </style>
 
 <body>
@@ -135,12 +130,10 @@ data:text/html;charset=utf-8,<html class="light">
     <main>
         <textarea contenteditable="true" id="TE" spellcheck="false" placeholder="Write..." autofocus></textarea>
     </main>
-    <script>function select() { var textarea = document.getElementById("TE"); textarea.select(); textarea.setSelectionRange(0, 99999); };
+    <script>
+        function select() { var textarea = document.getElementById("TE"); textarea.select(); textarea.setSelectionRange(0, 99999); };
         function swap() { var currentMode = document.getElementsByTagName("html")[0].classList; console.log(currentMode); if (currentMode.contains("dark")) { currentMode.remove("dark"); currentMode.add("light"); document.getElementById("swap").innerText = "Dark mode"; } else if (currentMode.contains("light")) { currentMode.remove("light"); currentMode.add("dark"); document.getElementById("swap").innerText = "Light mode"; } };
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            var currentMode = document.getElementsByTagName("html")[0].classList;
-            currentMode.remove("light"); currentMode.add("dark"); document.getElementById("swap").innerText = "Light mode";
-        }
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) { var currentMode = document.getElementsByTagName("html")[0].classList; currentMode.remove("light"); currentMode.add("dark"); document.getElementById("swap").innerText = "Light mode"; }
     </script>
 
 </html>
