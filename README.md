@@ -4,17 +4,31 @@
   <br>bufferNote is not saving your notes, since it is meant to be a quick way to make disposable notes instead of persistent ones. 
   <br>
   
+  
   ## How To Use 
   
   Using bufferNote is pretty simple, and it **doesn't even need an internet connection** ! It also works on PC and mobile.
   
   Here's how you can setup bufferNote in X simple steps : 
   
-  1. Go to X, and copy the entire code of the app
+  1. Go to [this link](https://github.com/EosisWasTaken/bufferNote/blob/main/bufferNote.html), and copy the entire code of the app
   2. Open a new tab, and paste the code. You are in the app !
   3. In your navigator of choice, add a bookmark to this page.
   
   Now you can spin up a fresh bufferNote everytime you click on the bookmark (or paste the URI) !
+  
+  
+  ## Features
+  
+  bufferNotes features : 
+  - Monospace font
+  - A button to select all text and copy it
+  - Two color schemes
+  
+  Dark mode             |  Light mode
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/EosisWasTaken/bufferNote/main/demo/demoDark.png)  |  ![](https://raw.githubusercontent.com/EosisWasTaken/bufferNote/main/demo/demoLight.png)
+  
   
   <br><br>
   *Inspired from [this gist](https://gist.github.com/scarecrow1123/55d6e871993730762ebbe1a5e31fcaf9)*
